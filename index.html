@@ -16,6 +16,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
+    <!-- Animaciones y efectos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <!-- Estilo personal -->
     <link rel="stylesheet" href="./css/estilos.css">
     <link rel="shortcut icon" href="favicon.png">
@@ -80,13 +83,13 @@
         <main class="main grillaSecundaria">
             <!-- Título página -->
             <section class="tituloPagina">
-                <h3>
+                <h3 class="animate__animated animate__lightSpeedInLeft">
                     ¡Bienvenidos a Sunspot!
                 </h3>
             </section>
 
             <!-- Imagen principal -->
-            <img src="img/planta.jpg" alt="planta" class="imagenPrincipal">
+            <img src="img/planta.jpg" alt="planta" class="imagenPrincipal animate__animated animate__zoomIn">
 
             <!-- Introducción -->
             <section class="introduccion fondoTexto">
@@ -116,31 +119,40 @@
 
                 <!-- Imágenes -->
                 <div class="containerImagenes">
-                    <div class="containerImagen">
+                    <div class="containerImagen efectoImagen">
                         <a href="./semillas.html">
                             <img src="img/plantas_pequenas.jpg" alt="Semillas" class="imagenTienda">
                         </a>
-                        <a href="./semillas.html">
-                            <h5 class="tituloImagen">Semillas</h5>
-                        </a>
+
+                        <div class="efectoTexto">
+                            <a href="./semillas.html">
+                                <h5 class="tituloImagen">Semillas</h5>
+                            </a>
+                        </div>
                     </div>
 
-                    <div class="containerImagen">
+                    <div class="containerImagen efectoImagen">
                         <a href="#">
                             <img src="img/plantas.jpg" alt="Plantas" class="imagenTienda">
                         </a>
-                        <a href="#">
-                            <h5 class="tituloImagen">Plantas</h5>
-                        </a>
+
+                        <div class="efectoTexto">
+                            <a href="#">
+                                <h5 class="tituloImagen">Plantas</h5>
+                            </a>
+                        </div>
                     </div>
 
-                    <div class="containerImagen">
+                    <div class="containerImagen efectoImagen">
                         <a href="#">
                             <img src="img/sustrato.jpg" alt="Sustratos" class="imagenTienda">
                         </a>
-                        <a href="#">
-                            <h5 class="tituloImagen">Sustratos</h5>
-                        </a>
+
+                        <div class="efectoTexto">
+                            <a href="#">
+                                <h5 class="tituloImagen">Sustratos</h5>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
