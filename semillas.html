@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fuentes externas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@100&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <!-- Estilo personal -->
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="shortcut icon" href="favicon.png">
+
+    <title>Sunspot: Bienvenidos</title>
+</head>
+
+<body>
+    <div class="grillaPrincipal">
+        <header class="encabezado">
+            <!-- Logo -->
+            <a href="./index.html">
+                <img src="./img/logo.png" alt="logo" class="logo">
+            </a>
+
+            <!-- Nombre empresa -->
+            <div class="tituloHeader">
+                <a href="./index.html">
+                    <h1>
+                        Sunspot
+                    </h1>
+                </a>
+                <h2>
+                    Cultivo urbano
+                </h2>
+            </div>
+
+            <!-- Menú de navegación -->
+            <nav class="menu">
+                <ul class="menuLista">
+                    <li class="menuItem">
+                        <a href="./index.html" class="menuItemLink">Inicio</a>
+                    </li>
+                    <li class="menuItem">
+                        <a href="./nosotros.html" class="menuItemLink">Nosotros</a>
+                    </li>
+                    <li class="menuItem">
+                        <a href="./cursos.html" class="menuItemLink">Cursos</a>
+                    </li>
+                    <li class="menuItem submenu">
+                        <a href="#" class="menuItemLink">Tienda</a>
+                        <!-- Submenú -->
+                        <ul class="submenuLista">
+                            <li class="submenuItem">
+                                <a href="./semillas.html" class="submenuItemLink">Semillas</a>
+                            </li>
+                            <li class="submenuItem">
+                                <a href="#" class="submenuItemLink">Plantas</a>
+                            </li>
+                            <li class="submenuItem">
+                                <a href="#" class="submenuItemLink">Sustratos</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menuItem">
+                        <a href="./contacto.html" class=" menuItemLink">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main contenido">
+            <section class="tituloPagina">
+                <h3>
+                    Tienda online: Semillas
+                </h3>
+            </section>
+
+            <!-- Introducción -->
+            <section class="introduccion fondoTexto">
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, ipsum esse blanditiis veniam
+                    reprehenderit iste sint labore laudantium sunt praesentium. Labore nobis nulla non molestias
+                    eligendi
+                    delectus deleniti quam ut error, libero dolorem sed at optio voluptas, quisquam dicta
+                    consectetur
+                    exercitationem expedita nisi facere, veniam laboriosam. Soluta neque omnis voluptate!
+                </p>
+            </section>
+
+            <!-- Tienda online -->
+            <section class="tienda">
+                <!-- Imágenes -->
+                <div class="containerImagenesTienda">
+                    <div class="containerImagenTienda">
+                        <img src="img/tienda/zanahorias.jpg" alt="Zanahorias" class="imagenTienda">
+                        <div class="textoImagenTienda">
+                            <h5 class="tituloImagenTienda">Zanahorias</h5>
+                            <h6 class="descripcionImagenTienda">Daucus carota</h6>
+                        </div>
+                        <div class="inventario">
+                            <form action="#" method="GET">
+                                <label for="zanahoria" class="labelInventario">Cantidad: </label>
+                                <input type="number" value="0" name="zanahoria" id="zanahoria" min="0" max="10"
+                                    class="inputInventario">
+                                <input type="submit" value="Agregar" class="submitInventario">
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="containerImagen">
+                        <img src="img/tienda/girasol.jpg" alt="Girasol" class="imagenTienda">
+                        <div class="textoImagenTienda">
+                            <h5 class="tituloImagenTienda">Girasol</h5>
+                            <h6 class="descripcionImagenTienda">Helianthus annuus</h6>
+                        </div>
+                        <div class="inventario">
+                            <form action="#" method="GET">
+                                <label for="girasol" class="labelInventario">Cantidad: </label>
+                                <input type="number" value="0" name="girasol" id="girasol" min="0" max="10"
+                                    class="inputInventario">
+                                <input type="submit" value="Agregar" class="submitInventario">
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="containerImagen">
+                        <img src="img/tienda/acelga.jpg" alt="Acelga" class="imagenTienda">
+                        <div class="textoImagenTienda">
+                            <h5 class="tituloImagenTienda">Acelga</h5>
+                            <h6 class="descripcionImagenTienda">Beta vulgaris var. cicla</h6>
+                        </div>
+                        <div class="inventario">
+                            <form action="#" method="GET">
+                                <label for="acelga" class="labelInventario">Cantidad: </label>
+                                <input type="number" value="0" name="acelga" id="acelga" min="0" max="10"
+                                    class="inputInventario">
+                                <input type="submit" value="Agregar" class="submitInventario">
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="containerImagen">
+                        <img src="img/tienda/calendula.jpg" alt="Calendula" class="imagenTienda">
+                        <div class="textoImagenTienda">
+                            <h5 class="tituloImagenTienda">Caléndula</h5>
+                            <h6 class="descripcionImagenTienda">Calendula officinalis</h6>
+                        </div>
+                        <div class="inventario">
+                            <form action="#" method="GET">
+                                <label for="calendula" class="labelInventario">Cantidad: </label>
+                                <input type="number" value="0" name="calendula" id="calendula" min="0" max="10"
+                                    class="inputInventario">
+                                <input type="submit" value="Agregar" class="submitInventario">
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="containerImagen">
+                        <img src="img/tienda/cherry.jpg" alt="Tomates cherry" class="imagenTienda">
+                        <div class="textoImagenTienda">
+                            <h5 class="tituloImagenTienda">Tomates cherry</h5>
+                            <h6 class="descripcionImagenTienda">Solanum lycopersicum</h6>
+                        </div>
+                        <div class="inventario">
+                            <form action="#" method="GET">
+                                <label for="cherry" class="labelInventario">Cantidad: </label>
+                                <input type="number" value="0" name="cherry" id="cherry" min="0" max="10"
+                                    class="inputInventario">
+                                <input type="submit" value="Agregar" class="submitInventario">
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="containerImagen">
+                        <img src="img/tienda/coreopsis.jpg" alt="Coreopsis" class="imagenTienda">
+                        <div class="textoImagenTienda">
+                            <h5 class="tituloImagenTienda">Coreopsis</h5>
+                            <h6 class="descripcionImagenTienda">Coreopsis lanceolata</h6>
+                        </div>
+                        <div class="inventario">
+                            <form action="#" method="GET">
+                                <label for="coreopsis" class="labelInventario">Cantidad: </label>
+                                <input type="number" value="0" name="coreopsis" id="coreopsis" min="0" max="10"
+                                    class="inputInventario">
+                                <input type="submit" value="Agregar" class="submitInventario">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <!-- Nombre de la empresa -->
+            <section>
+                <p class="piePagina">Sunspot, cultivo urbano.</p>
+            </section>
+
+            <!-- Suscripción a novedades -->
+            <section class="containerForm">
+                <h4>
+                    Suscríbete a nuestras novedades
+                </h4>
+
+                <form action="#" method="GET" class="form">
+                    <fieldset class="campos">
+                        <label for="nombre_contacto" class="formLabel">Nombre:</label>
+                        <input type="text" name="nombre_contacto" id="nombre_contacto" class="formInput" required>
+                    </fieldset>
+                    <fieldset class="campos">
+                        <label for="mail_contacto" class="formLabel">Correo electrónico:</label>
+                        <input type="email" name="mail_contacto" id="mail_contacto" class="formInput" required>
+                    </fieldset>
+
+                    <input type="submit" value="Suscribirse" class="formInput formInputSubmit">
+
+                </form>
+            </section>
+
+            <!-- Dirección y whatsapp -->
+            <section>
+                <p class="piePagina">
+                    Palermo, Buenos Aires, Argentina
+                </p>
+                <p class="piePagina">
+                    info@sunspot.com.ar
+                </p>
+                <a href="https://web.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </section>
+        </footer>
+    </div>
+</body>
+
+</html>

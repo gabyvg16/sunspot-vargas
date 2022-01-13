@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fuentes externas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@100&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <!-- Estilo personal -->
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="shortcut icon" href="favicon.png">
+
+    <title>Sunspot: Bienvenidos</title>
+</head>
+
+<body>
+    <div class="grillaPrincipal">
+        <header class="encabezado">
+            <!-- Logo -->
+            <a href="./index.html">
+                <img src="./img/logo.png" alt="logo" class="logo">
+            </a>
+
+            <!-- Nombre empresa -->
+            <div class="tituloHeader">
+                <a href="./index.html">
+                    <h1>
+                        Sunspot
+                    </h1>
+                </a>
+                <h2>
+                    Cultivo urbano
+                </h2>
+            </div>
+
+            <!-- Menú de navegación -->
+            <nav class="menu">
+                <ul class="menuLista">
+                    <li class="menuItem">
+                        <a href="./index.html" class="menuItemLink">Inicio</a>
+                    </li>
+                    <li class="menuItem">
+                        <a href="./nosotros.html" class="menuItemLink">Nosotros</a>
+                    </li>
+                    <li class="menuItem">
+                        <a href="./cursos.html" class="menuItemLink">Cursos</a>
+                    </li>
+                    <li class="menuItem submenu">
+                        <a href="#" class="menuItemLink">Tienda</a>
+                        <!-- Submenú -->
+                        <ul class="submenuLista">
+                            <li class="submenuItem">
+                                <a href="./semillas.html" class="submenuItemLink">Semillas</a>
+                            </li>
+                            <li class="submenuItem">
+                                <a href="#" class="submenuItemLink">Plantas</a>
+                            </li>
+                            <li class="submenuItem">
+                                <a href="#" class="submenuItemLink">Sustratos</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menuItem">
+                        <a href="./contacto.html" class=" menuItemLink">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main contenido">
+            <!-- Título página -->
+            <section class="tituloPagina">
+                <h3>
+                    Contacto
+                </h3>
+            </section>
+
+            <!-- Formulario de contacto -->
+            <section class="containerForm containerFormContacto">
+                <h4>Para contactarte con nosotros, por favor completa el siguiente formulario:</h4>
+
+                <form action="#" method="GET" class="form">
+                    <!-- Datos de contacto -->
+                    <fieldset class="campos">
+                        <label for="nombre_contacto" class="formLabel">Nombre:</label>
+                        <input type="text" name="nombre_contacto" id="nombre_contacto" class="formInput" required>
+                    </fieldset>
+
+                    <fieldset class="campos">
+                        <label for="mail_contacto" class="formLabel">Correo electrónico:</label>
+                        <input type="email" name="mail_contacto" id="mail_contacto" class="formInput" required>
+                    </fieldset>
+
+                    <fieldset class="campos">
+                        <label for="telefono_contacto" class="formLabel">Teléfono:</label>
+                        <input type="tel" placeholder="formato 11-1234-5678" name="telefono_contacto"
+                            pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}" id="telefono_contacto" class="formInput">
+                    </fieldset>
+
+                    <!-- Tipo de consulta -->
+                    <fieldset class="campos seleccion">
+                        <p class="formLabel">Tipo de consulta:</p>
+                        <input type="radio" id="compra_online" value="Compra online" name="tipo_consulta">
+                        <label for="compra_online" class="formLabel">Compra online</label>
+
+                        <input type="radio" id="cursos" value="Cursos" name="tipo_consulta">
+                        <label for="cursos" class="formLabel">Cursos</label>
+
+                        <input type="radio" id="otros" value="Otros" name="tipo_consulta">
+                        <label for="otra" class="formLabel">Otros</label>
+                    </fieldset>
+
+                    <!-- Mensaje -->
+                    <textarea placeholder="Mensaje" name="Mensaje" cols="30" rows="10" class="areaTexto"></textarea>
+
+                    <!-- Enviar -->
+                    <input type="submit" value="Enviar" class="formInputSubmit">
+                </form>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <!-- Nombre de la empresa -->
+            <section>
+                <p class="piePagina">Sunspot, cultivo urbano.</p>
+            </section>
+
+            <!-- Suscripción a novedades -->
+            <section class="containerForm">
+                <h4>
+                    Suscríbete a nuestras novedades
+                </h4>
+
+                <form action="#" method="GET" class="form">
+                    <fieldset class="campos">
+                        <label for="nombre_contacto" class="formLabel">Nombre:</label>
+                        <input type="text" name="nombre_contacto" id="nombre_contacto" class="formInput" required>
+                    </fieldset>
+                    <fieldset class="campos">
+                        <label for="mail_contacto" class="formLabel">Correo electrónico:</label>
+                        <input type="email" name="mail_contacto" id="mail_contacto" class="formInput" required>
+                    </fieldset>
+
+                    <input type="submit" value="Suscribirse" class="formInput formInputSubmit">
+
+                </form>
+            </section>
+
+            <!-- Dirección y whatsapp -->
+            <section>
+                <p class="piePagina">
+                    Palermo, Buenos Aires, Argentina
+                </p>
+                <p class="piePagina">
+                    info@sunspot.com.ar
+                </p>
+                <a href="https://web.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </section>
+        </footer>
+    </div>
+</body>
+
+</html>

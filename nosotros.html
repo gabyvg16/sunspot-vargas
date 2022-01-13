@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fuentes externas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@100&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <!-- Estilo personal -->
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="shortcut icon" href="favicon.png">
+
+    <title>Sunspot: Bienvenidos</title>
+</head>
+
+<body>
+    <div class="grillaPrincipal">
+        <header class="encabezado">
+            <!-- Logo -->
+            <a href="./index.html">
+                <img src="./img/logo.png" alt="logo" class="logo">
+            </a>
+
+            <!-- Nombre empresa -->
+            <div class="tituloHeader">
+                <a href="./index.html">
+                    <h1>
+                        Sunspot
+                    </h1>
+                </a>
+                <h2>
+                    Cultivo urbano
+                </h2>
+            </div>
+
+            <!-- Menú de navegación -->
+            <nav class="menu">
+                <ul class="menuLista">
+                    <li class="menuItem">
+                        <a href="./index.html" class="menuItemLink">Inicio</a>
+                    </li>
+                    <li class="menuItem">
+                        <a href="./nosotros.html" class="menuItemLink">Nosotros</a>
+                    </li>
+                    <li class="menuItem">
+                        <a href="./cursos.html" class="menuItemLink">Cursos</a>
+                    </li>
+                    <li class="menuItem submenu">
+                        <a href="#" class="menuItemLink">Tienda</a>
+                        <!-- Submenú -->
+                        <ul class="submenuLista">
+                            <li class="submenuItem">
+                                <a href="./semillas.html" class="submenuItemLink">Semillas</a>
+                            </li>
+                            <li class="submenuItem">
+                                <a href="#" class="submenuItemLink">Plantas</a>
+                            </li>
+                            <li class="submenuItem">
+                                <a href="#" class="submenuItemLink">Sustratos</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menuItem">
+                        <a href="./contacto.html" class=" menuItemLink">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main grillaSecundaria grillaNosotros">
+            <!-- Título página -->
+            <section class="tituloPagina">
+                <h3>
+                    Nosotros
+                </h3>
+            </section>
+
+            <!-- Imagen principal -->
+            <img src="img/huerto_urbano.jpg" alt="planta" class="imagenPrincipal mostrar">
+
+            <!-- Objetivo -->
+            <section class="introduccion">
+                <p class="fondoTexto">
+                    Nuestro objetivo es inspirar y facilitar el <strong>cultivo urbano</strong> con el fin de crear
+                    espacios
+                    vivos y
+                    comestibles y trabajar a favor de la naturaleza, imitando sus formas y ciclos.
+                </p>
+            </section>
+
+            <!-- Filosofía -->
+            <section class="secciones seccion2">
+                <h3>
+                    Filosofía y sueño
+                </h3>
+
+                <p class="fondoTexto">
+                    El sueño de cultivar en la ciudad, nace en 2021 de la pregunta “¿Dónde, cómo y quién produce mi
+                    alimento?” Para responder, fue necesario empezar a cultivar en nuestro balcón, con poca información
+                    pero
+                    mucho entusiasmo. Con las primeras macetas, fuimos aprendiendo no solo sobre el funcionamiento de
+                    las
+                    plantas, sino también sobre todos los procesos de la vida. Han sido las horas de contemplación lo
+                    que
+                    nos ha brindado los grandes aprendizajes, y donde seguimos aprendiendo cada día.
+                </p>
+            </section>
+
+            <!-- Sostenibilidad -->
+            <section class="seccion4">
+                <iframe class="video" src="https://www.youtube.com/embed/hEmvBKFKBa8" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </section>
+
+            <section class="secciones seccion3">
+                <h3>
+                    Sostenibilidad
+                </h3>
+
+                <p class="fondoTexto">
+                    La <strong>sostenibilidad</strong> es uno de los pilares de <em>Sunspot</em>, por lo que nos
+                    enfocamos
+                    en el uso de recursos, las relaciones humanas, y la
+                    resiliencia de los proyectos.
+                </p>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <!-- Nombre de la empresa -->
+            <section>
+                <p class="piePagina">Sunspot, cultivo urbano.</p>
+            </section>
+
+            <!-- Suscripción a novedades -->
+            <section class="containerForm">
+                <h4>
+                    Suscríbete a nuestras novedades
+                </h4>
+
+                <form action="#" method="GET" class="form">
+                    <fieldset class="campos">
+                        <label for="nombre_contacto" class="formLabel">Nombre:</label>
+                        <input type="text" name="nombre_contacto" id="nombre_contacto" class="formInput" required>
+                    </fieldset>
+                    <fieldset class="campos">
+                        <label for="mail_contacto" class="formLabel">Correo electrónico:</label>
+                        <input type="email" name="mail_contacto" id="mail_contacto" class="formInput" required>
+                    </fieldset>
+
+                    <input type="submit" value="Suscribirse" class="formInput formInputSubmit">
+
+                </form>
+            </section>
+
+            <!-- Dirección y whatsapp -->
+            <section>
+                <p class="piePagina">
+                    Palermo, Buenos Aires, Argentina
+                </p>
+                <p class="piePagina">
+                    info@sunspot.com.ar
+                </p>
+                <a href="https://web.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </section>
+        </footer>
+    </div>
+</body>
+
+</html>

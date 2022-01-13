@@ -1,0 +1,554 @@
+/* Universal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: black
+}
+
+/* Vista Mobile */
+.grillaPrincipal {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "encabezado"
+        "main"
+        "footer";
+    justify-items: center;
+}
+
+/* Grids */
+.grillaSecundaria {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "tituloPagina     tituloPagina"
+        "imagenPrincipal  imagenPrincipal"
+        "introduccion     introduccion"
+        "tienda           tienda";
+    justify-items: center;
+    padding-top: 2rem;
+}
+
+.grillaNosotros {
+    grid-template-areas:
+        "tituloPagina     tituloPagina"
+        "introduccion     introduccion"
+        "seccion2         seccion2"
+        "seccion3         seccion3"
+        "seccion4         seccion4";
+}
+
+.grillaCursos {
+    grid-template-areas:
+        "tituloPagina     tituloPagina"
+        "introduccion     introduccion"
+        "seccion2         seccion2"
+        "seccion3         seccion3";
+}
+
+/* Secciones */
+.seccion2 {
+    grid-area: seccion2;
+}
+
+.seccion3 {
+    grid-area: seccion3;
+}
+
+.seccion4 {
+    grid-area: seccion4;
+}
+
+.video {
+    width: 300px;
+    height: 168px;
+    padding: 1rem;
+}
+
+.secciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Texto introductorio para cada página */
+.introduccion {
+    grid-area: introduccion;
+}
+
+/* Tienda online */
+.tienda {
+    grid-area: tienda;
+}
+
+/* Logo y header */
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.encabezado {
+    display: flex;
+    background-color: seagreen;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0.5rem;
+    align-items: center;
+    grid-area: encabezado;
+    width: 100%;
+}
+
+.tituloHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1rem;
+}
+
+/* Titulos */
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    text-align: center;
+    color: floralwhite;
+}
+
+h2 {
+    font-size: 1rem;
+    text-align: center;
+    color: floralwhite;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+h4 {
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/* Enlaces */
+a {
+    text-decoration: none;
+}
+
+/* Menú de navegación */
+.menuLista {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menuItem {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    border-bottom: solid 1px silver;
+    margin: 0.5rem;
+    color: whitesmoke;
+}
+
+.menuItemLink {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+/* Submenú */
+.submenu {
+    position: relative;
+}
+
+.submenuLista {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    display: none;
+}
+
+.submenuItem {
+    padding: 0.3rem;
+    border-bottom: solid 1px silver;
+    list-style: none;
+}
+
+.submenuItemLink {
+    text-decoration: none;
+    color: rgb(2, 53, 2);
+}
+
+.menuItemLink:hover {
+    color: silver;
+}
+
+.menuItem:hover .submenuLista {
+    display: block;
+}
+
+/* Main */
+.main {
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    grid-area: main;
+    width: 100%;
+    padding-top: 2rem;
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Título página */
+.tituloPagina {
+    background-color: white;
+    padding: 1rem;
+    opacity: 0.5;
+    width: 100%;
+    text-align: center;
+    grid-area: tituloPagina;
+}
+
+/* Imagen principal */
+.imagenPrincipal {
+    width: 300px;
+    height: auto;
+    padding: 1rem;
+    grid-area: imagenPrincipal;
+}
+
+/* Fondo para textos */
+.fondoTexto {
+    background-color: darkseagreen;
+    margin: 1rem;
+    border-radius: 10px;
+    align-items: center;
+}
+
+/* Párrafos */
+p {
+    text-align: justify;
+    padding: 1rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/* Imagenes */
+.containerImagenes {
+    display: grid;
+    grid-template-rows: repeat(3, 180px);
+    grid-template-columns: 1fr;
+    justify-items: center;
+    justify-content: center;
+    grid-row-gap: 1rem;
+    padding: 1rem;
+}
+
+.tituloImagen {
+    height: 80px;
+    width: 180px;
+    background-color: wheat;
+    transform: translate(0%, -155%);
+    opacity: 50%;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    text-align: center;
+    color: darkgreen;
+    padding: 1rem;
+}
+
+/* PAra imágenes de la tienda */
+.containerImagenesTienda {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    justify-content: center;
+    grid-row-gap: 2rem;
+    padding: 2rem;
+}
+
+.containerImagenTienda {
+    height: 230px;
+}
+
+.imagenTienda {
+    width: 180px;
+    height: auto;
+    box-shadow: 6px 6px 8px -1px rgba(0, 0, 0, 0.6);
+}
+
+/* lo uso en la tienda */
+.textoImagenTienda {
+    height: 50px;
+    width: 180px;
+    background-color: wheat;
+    transform: translate(0%, -120%);
+    opacity: 50%;
+    text-align: center;
+    color: darkgreen;
+}
+
+.tituloImagenTienda {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    text-align: center;
+    color: darkgreen;
+}
+
+.descripcionImagenTienda {
+    font-style: italic;
+    font-size: 0.8rem;
+    text-align: center;
+    color: darkgreen;
+}
+
+/* Formulario para agregar productos en la tienda */
+.inventario {
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 0.5rem;
+    transform: translate(0%, -100%);
+    opacity: 50%;
+    border-radius: 1rem;
+}
+
+.labelInventario {
+    color: darkgreen;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.inputInventario {
+    border: none;
+    border-bottom: solid 3px silver;
+    font-size: 0.8rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.submitInventario {
+    border-radius: 1rem;
+    font-size: 0.6rem;
+    padding: 0.2rem;
+}
+
+/* Formularios */
+.containerForm {
+    width: 95%;
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 6px 6px 8px -1px rgba(0, 0, 0, 0.6);
+    margin: 1rem;
+}
+
+.campos {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    border: none;
+}
+
+.form {
+    text-align: center;
+}
+
+.formLabel {
+    font-weight: bold;
+    font-size: 0.7rem;
+    text-align: left;
+    width: 40%;
+    margin: 0.5rem;
+}
+
+.formInput {
+    width: 45%;
+    background-color: whitesmoke;
+    border: none;
+    border-bottom: solid 3px silver;
+    font-size: 0.7rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin: 0.5rem;
+}
+
+.formInput:focus {
+    outline: none;
+}
+
+.formInputSubmit {
+    border-radius: 0.5rem;
+    background-color: teal;
+    margin: 0.2rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: whitesmoke;
+    padding: 0.2rem;
+    cursor: pointer;
+}
+
+.formInputSubmit:hover {
+    background-color: darkseagreen;
+}
+
+/* Contacto */
+.containerFormContacto {
+    width: 90%;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seleccion {
+    display: flex;
+    align-items: center;
+}
+
+.areaTexto {
+    border-radius: 0.5rem;
+    display: block;
+    width: 90%;
+    height: 100px;
+    margin: 1rem;
+    padding: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+/* Centrar texto */
+.centrar {
+    text-align: center;
+}
+
+/* Para ocultar */
+.mostrar {
+    display: none;
+}
+
+/* Footer */
+.footer {
+    background-color: seagreen;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-area: footer;
+    width: 100%;
+}
+
+.piePagina {
+    text-align: center;
+    padding: 0.1rem;
+    margin: 0.1rem;
+    font-size: 0.8rem;
+    color: floralwhite;
+    width: 100%;
+}
+
+/* Whatsapp */
+.fa-whatsapp {
+    color: whitesmoke;
+    background-color: green;
+    font-size: 2rem;
+    padding: 0.6rem;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 5%;
+    right: 3%;
+}
+
+/* Vista Tablet */
+@media(min-width: 768px) {
+    .containerImagenes {
+        grid-template-rows: 180px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .fondoTexto {
+        margin: 2rem;
+    }
+
+    .footer {
+        flex-direction: row;
+    }
+
+    .containerForm {
+        width: 40%;
+    }
+
+    .video {
+        width: 500px;
+        height: 281px;
+        padding: 1rem;
+    }
+
+    .containerFormContacto {
+        width: 55%;
+    }
+
+    .containerImagenesTienda {
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 3rem;
+    }
+}
+
+/* Vista escritorio */
+@media(min-width: 1024px) {
+    .grillaSecundaria {
+        grid-template-areas:
+            "tituloPagina tituloPagina"
+            "imagenPrincipal introduccion"
+            "tienda tienda";
+    }
+
+    .encabezado {
+        justify-content: space-evenly;
+    }
+
+    .imagenPrincipal {
+        width: 450px;
+        height: auto;
+    }
+
+    .mostrar {
+        display: unset;
+    }
+
+    .grillaNosotros {
+        grid-template-areas:
+            "tituloPagina tituloPagina"
+            "imagenPrincipal introduccion"
+            "imagenPrincipal seccion2"
+            "seccion3 seccion4";
+    }
+
+    .grillaCursos {
+        grid-template-areas:
+            "tituloPagina tituloPagina"
+            "introduccion seccion3"
+            "seccion2 seccion3";
+    }
+
+    .containerImagenesTienda {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
